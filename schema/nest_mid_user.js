@@ -1,9 +1,10 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var nest = new Schema({
-    _id: Schema.Types.ObjectId
-    nestid: [{ type: Schema.Types.ObjectId, ref: 'nest' }],
-    users: [{ type: Schema.Types.ObjectId, ref: 'User' }],
+var nest_mid_user = new Schema({
+    nestid: { type: Schema.Types.ObjectId, ref: 'nest' },
+    userid: { type: Schema.Types.ObjectId, ref: 'User' },
     time: Date
 });
+
+module.exports = mongoose.model('nest_mid_user', nest_mid_user, 'nest_mid_user');

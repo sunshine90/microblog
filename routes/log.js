@@ -14,25 +14,17 @@ module.exports = {
                 console.log("错误信息显示："+err);
             }
             else {
-                // session值的存取
-                var _user = req.body;
-                req.session.user = _user;
-                console.log(_user);
-                // 响应json数据
-                res.send(tool.jsonModel("success", result));
+                if(result.length != 1){
+                    res.send(tool.jsonModel("fail", ""));
+                }
+                else {
+                    // session值的存取
+                    req.session.user = result;
+                    // 响应json数据
+                    res.send(tool.jsonModel("success", result[0]));
+                }
             }
         });
-
-        // user数据创建
-        //userModel.create(user, function(err, obj){
-        //    if(err){
-        //        console.log("错误信息显示："+err);
-        //    }
-        //    else {
-        //
-        //    }
-        //});
-
     },
     logup : function (req, res, next){
         res.send("log-logup");

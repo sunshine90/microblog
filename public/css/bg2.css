@@ -1,0 +1,12 @@
+.wrap{
+	min-width: 980px;
+	width: 100%;
+    height: 800px;
+	background: url(../images/images/login-bg2_01.jpg) center top no-repeat;
+	background-size: cover;
+    filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src='/img/login-bg.png', sizingMethod='scale');
+    overflow: hidden;
+}
+.content{
+	overflow: hidden;
+}

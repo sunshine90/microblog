@@ -1,0 +1,95 @@
+*{
+     color:white;
+}
+.text{
+	padding: 118px 0 60px 0;
+	width: 340px;
+	height: 63px;
+	margin: 0 auto;
+}
+img.font-t{
+    position: relative;
+    display: block;
+}
+img.font-b{
+   position: relative;
+    
+}
+img.font-c{
+    position: relative;
+    margin-right: -100px;
+}
+.logintable{
+	width: 312px;
+    height: 165px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+
+}
+.logintable input{
+    padding-left: 28px;
+	/*width: 100%;*/
+	height: 36px;
+    line-height: 36px;
+	color: #fff;
+    opacity: 0;
+    filter:alpha( opacity=0);
+	background: transparent;
+    /*opacity: 0;*/
+    outline: none;
+    border: 1px solid #d1ccc8;
+}
+.loginemail,.loginpassword{
+	margin-top: 21px;
+}
+.logintable .loginbutton {
+    display: block;
+    position: absolute;
+    margin-left: -170px;
+    width: 342px;
+    height: 36px;
+    color: #fff;
+    font-size: 17px;
+   background-color: #5f7ec5;
+    border: 0;
+}
+
+.four_margin{
+    margin-top: 20px;
+    cursor: pointer;
+}
+ .one,.two,.three,.four{
+        position: absolute;
+        top: 1000px;
+        left: 50%;
+        width: 340px;
+        margin-left: -170px;
+
+       }
+       .img_left{
+        margin-left: -100px;
+       }
+       .img_right{
+        margin-left: 100px;
+       }
+       .add_input{
+        position: absolute;
+        top: 268px;
+       /* width: 305px;*/
+        height: 166px;
+        right: -500px;
+        width:2px;
+        overflow: hidden;
+        right: 135px;
+       }
+       .add_input input{
+        width: 300px;
+        height: 36px;
+        border-radius: 5px; 
+        margin-top: 17px;
+        float: left;
+       border:none;
+       background-color: transparent;
+       }
+       .state_1{ color: white;}
+       .state_2{color: red;}

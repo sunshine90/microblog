@@ -2,10 +2,12 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var nest = new Schema({
-    _id: Schema.Types.ObjectId
-    owner: [{ type: Schema.Types.ObjectId, ref: 'User' }],
-    type: [{ type: Schema.Types.ObjectId, ref: 'Type' }],
+    owner: { type: Schema.Types.ObjectId, ref: 'user' },
+    type: {type: String, default : ""},
     time: Date,
-    level: Number,
-    liveness: Number
+    level: {type: Number, default : 0},
+    liveness: {type: Number, default : 0}
 });
+
+
+module.exports = mongoose.model('nest', nest, 'nest');
