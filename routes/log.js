@@ -1,22 +1,38 @@
-/**
- * Created by lenovo1 on 2015/6/7.
- */
+var mongoose = require("mongoose");
+var userModel = require("../schema/user");
 var tool = require("./tool");
+
+//mongoose.connect(tool.dbUrl);
+
 
 module.exports = {
     login : function (req, res, next){
-      /*  // 获取表单数据对象
+        // 获取表单数据对象
         var user = req.body;
-        console.log(user);
+        userModel.find(user, function(err, result){
+            if(err){
+                console.log("错误信息显示："+err);
+            }
+            else {
+                // session值的存取
+                var _user = req.body;
+                req.session.user = _user;
+                console.log(_user);
+                // 响应json数据
+                res.send(tool.jsonModel("success", result));
+            }
+        });
 
-        // 登录成功后定向到某一个页面
-        res.redirect("/loginOk.html");*/
-        var status = "success";
-        var jsonStr = {
-            name : "nihao",
-            age : 12
-        }
-        res.send(tool.jsonModel(status, jsonStr));
+        // user数据创建
+        //userModel.create(user, function(err, obj){
+        //    if(err){
+        //        console.log("错误信息显示："+err);
+        //    }
+        //    else {
+        //
+        //    }
+        //});
+
     },
     logup : function (req, res, next){
         res.send("log-logup");

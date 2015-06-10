@@ -5,8 +5,9 @@ var logger = require('morgan');
 
 // 引入session模块 储存到mongodb中
 var mongoose = require("mongoose");
-var dbUrl = "mongodb://127.0.0.1:27017/testmongo";
-mongoose.connect(dbUrl);
+var tool = require("./routes/tool");
+// 此处已经连接数据库，所以以后不需要进行数据库的链接
+mongoose.connect(tool.dbUrl);
 var session = require('express-session');
 var mongoStore = require('connect-mongo')(session);
 
@@ -19,11 +20,11 @@ var app = express();
 
 // session的引入
 app.use(session({
-    secret : "microblog",
+    secret : "blog",
     resave : true,
     saveUninitialized: true,
     store : new mongoStore({
-      url : dbUrl
+      url : tool.dbUrl
     })
 }));
 

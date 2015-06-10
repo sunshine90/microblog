@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/public.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/layout.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/loguo.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bg2.css">
+    <script type="text/javascript" src="javascripts/jquery.js"></script>
+    <script type="text/javascript" src="javascripts/logup.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header"></div>
+        <div class="main">
+            <div class="header_con clearfix">
+                <div class="auto clearfix">
+                    <div class="pull-left logo">
+                        <a href="#"><img src="images/logo.png"></a>
+                    </div>
+                    <div class="nav pull-right">
+                        <ul class="nav_con clearfix">
+                            <li><a href="#">首页</a></li>
+                            <li><a href="#">生活</a></li>
+                            <li><a href="#">礼品</a></li>
+                            <li><a href="#">创意</a></li>
+                            <li><a href="">闲聊</a></li>
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="">用户登录</a></li>
+                            <li><a href="" id="active">注册</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="text">
+                <img src="images/font-tt.png" class="font-t img_left" />
+                <img src="images/font-cc.png" class="font-c img_right" />
+                 <img src="images/font-bb.png" class="font-b img_left" />
+            </div>
+            <div class="logintable">
+            <form id="loginform">
+                <input class="loginname one" name="name" id="username" type="text" placeholder="用户名" />
+                <input class="loginpassword two" type="text" id="password" name="password" placeholder="密码" />
+                <input class="loginbutton three four_margin submit" id="login" type="button" value="登陆" />
+            </form>
+            </div>
+            <div class="add_input">
+                <input type="text" readonly class="state1 state_1" value="请输入用户名">
+                <input type="text" readonly class="state3 state_1" value="请输入密码">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer_container">
+            <ul class="clearfix about">
+                <li><a href="#">关于窝聊 |</a></li>
+                <li><a href="#">联系我们 |</a></li>
+                <li><a href="#">联系中心</a></li>
+            </ul>
+            <p class="copyright">重庆邮电大学 @2014 ehui.cn 京ICP条13004627号-6</p>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            $("#login").on("click", function(){
+                var serilize = $("#loginform").serialize();
+                $.post("/log/login", serilize, function(data, status){
+                    alert(data);
+                });
+            })
+        });
+    </script>
+
+</body>
+</html>

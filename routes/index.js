@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-
+var tool = require("./tool");
 // import log.js
 var log = require("./log");
 
@@ -14,9 +14,10 @@ var profile = require("./profile");
 var friends = require("./friends");
 
 // 路由中间件的使用,对session的验证处理
-router.use(function(req, res, next){
-  console.log("中间件");
-  next();
+router.use("/log/login", function(req, res, next){
+    // 检验是否已经有session的值
+    console.log(req.session.user);
+    next();
 });
 
 // log.js

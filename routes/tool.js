@@ -2,11 +2,23 @@
  * Created by lenovo1 on 2015/6/8.
  */
 module.exports = {
-    // 文件JSON化返回字符串的形式到前端
+    // 鏂囦欢JSON鍖栬繑鍥炲瓧绗︿覆鐨勫舰寮忓埌鍓嶇
     jsonModel : function (sta, data){
         return JSON.stringify({
             status : sta,
             responseText : data
         })
+    },
+    /* 閾炬帴鏁版嵁搴撳湴鍧� */
+    dbUrl : "mongodb://127.0.0.1:27017/testmongo",
+
+    isNullObj: function (obj){
+        for(var i in obj){
+            if(obj.hasOwnProperty(i)){
+                return false;
+            }
+        }
+        return true;
     }
-}
+
+};
