@@ -13,15 +13,9 @@ var profile = require("./profile");
 // import profile.js
 var friends = require("./friends");
 
-// 路由中间件的使用,对session的验证处理
-router.use("/log/login", function(req, res, next){
-    // 检验是否已经有session的值
-    console.log(req.session.user);
-    next();
-});
 
 // log.js
-router.use("/log/login", log.login);
+router.use("/log/login",log.signed ,log.login);
 router.use("/log/logup", log.logup);
 router.use("/log/logout", log.logout);
 router.use("/log/search", log.search);
@@ -39,9 +33,10 @@ router.use("/profile/selfinfo", profile.selfinfo);
 router.use("/profile/save", profile.save);
 
 // friends.js
-router.use("/friends/add", friends.add);
-router.use("/friends/del", friends.del);
-router.use("/friends/chat", friends.chat);
+router.use("/friends/add",log.signed , friends.add);
+router.use("/friends/del",log.signed , friends.del);
+router.use("/friends/chat",log.signed , friends.chat);
+router.use("/friends/all",log.signed , friends.findAll);
 
 
 

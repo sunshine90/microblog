@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
 
 var nest_mid_user = new Schema({
     nestid: { type: Schema.Types.ObjectId, ref: 'nest' },
-    userid: { type: Schema.Types.ObjectId, ref: 'User' },
+    userid: { type: Schema.Types.ObjectId, ref: 'user' },
     time: Date
 });
 
