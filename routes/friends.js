@@ -62,8 +62,11 @@ module.exports = {
         }
     },
     del : function (req, res, next){
-        if(req.flag){
-            var meId = req.session.user[0]._id; // 模拟session数据
+        //if(req.flag){
+        //    var meId = req.session.user[0]._id; // 模拟session数据
+
+            var meId = "5578459caa5f8a23784911b0";
+
             // 用post方式提交过来数据
             var friendId = req.query.friendId; // 需要删除朋友的ID
 
@@ -83,26 +86,27 @@ module.exports = {
                     }
                 }
             });
-        }
-        // 未登录状况下
-        else {
-            res.send("跳转到登录界面！");
-        }
+        //}
+        //// 未登录状况下
+        //else {
+        //    res.send("跳转到登录界面！");
+        //}
     },
     // 查询该session下的所有friends
     findAll : function(req, res, next){
-        if(req.flag){
-            var meId = req.session.user[0]._id;
-            _friends.findOne({me: meId}).populate("other").exec(function(err, friends){
-                var allFriends = friends.other;
-                console.log(allFriends.length);
-                res.send(allFriends);
-            });
-        }
-        else {
-            res.send("跳转到登录界面！");
-        }
+        //if(req.flag){     // 判断session 是否存在
+            //var meId = req.session.user[0]._id;
 
+            var meId = "5578459caa5f8a23784911b0";
+            _friends.findOne({me: meId})
+                .populate("other")
+                .exec(function(err, results){
+                    res.send(JSON.stringify(results));
+                });
+        //}
+        //else {
+        //    res.send("跳转到登录界面！");
+        //}
     },
 
     chat : function (req, res, next){

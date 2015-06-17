@@ -1,0 +1,202 @@
+    .friend {
+        right: -100%;
+        top: 0;
+        overflow: hidden;
+        z-index: 10;
+        width: 300px;
+        height: 100%;
+        -webkit-transition: right .4s;
+        -moz-transition: right .4s;
+        transition: right .4s
+    }
+    
+    .jp-container {
+        width: 100%;
+        position: absolute;
+        top: 192px;
+        bottom: 0;
+        background: #d8f3ff;
+        float: left;
+    }
+    
+    .jp-container .myfriend {
+        overflow: hidden;
+        display: block;
+        line-height: 20px;
+    }
+    
+    .jp-container .myfriend:first-child {
+        border-top: none;
+    }
+    
+    .jp-container .myfriend:last-child {
+        border-bottom: none;
+    }
+    .jp-container .myfriend:nth-child(even) {
+        background: #d4ecf7;
+    }
+    .jp-container .myfriend:hover {
+        background-color: #cae5f0;
+    }
+    /*add*/
+
+    .f-indent {
+        margin-left: 15px
+    }
+    .f-tittle {
+
+        height: 142px;
+        background-color: #a6e4fe;
+    }
+    .f-chat-title{
+        padding-top: 30px;
+        color: #97c7db;
+        font-size: 12px;
+    }
+    .f-chat-name {
+        padding-top: 10px;
+        font-size: 20px;
+        color: #a4cada
+    }
+    .f-chat-note{
+        color: #878785;
+        font-size: 12px;
+    }
+    
+    .f-info,
+    .f-my {
+        width: 80px;
+    }
+    
+    .f-info {
+        padding-left: 14px;
+        float: left;
+    }
+    
+    .f-my {
+        padding-right: 14px;
+        float: right;
+    }
+    
+    .f-photo {
+        position: relative;
+        float: left;
+        width: 50px;
+        overflow: hidden;
+    }
+    
+    .f-color {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 10px;
+    }
+    
+    .f-photo img {
+        border: 0;
+        outline: none;
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+    }
+    
+    .f-descrip {
+        position: relative;
+        font-size: 12px;
+        overflow: hidden;
+        padding-left: 12px;
+    }
+    
+    .f-group {
+        color: #bababb;
+        padding: 5px 0;
+    }
+    
+    .f-name {
+        color: #37353c;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+    .f-msg {
+        color: #75747a;
+    }
+    
+    .f-time {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        font-size: 12px;
+        color: #bababb;
+    }
+    
+    .myfriend {
+        padding: 10px 0;
+        cursor: pointer;
+    }
+    .f-personal{
+        height: 50px;
+        line-height: 50px;
+        font-size: 12px;
+        text-indent: 10px;
+        color: #90908e;
+        background: #94d3f4;
+    }
+    .add{
+        background: #8cc5e2;
+        padding: 5px;
+        margin-top: 5px;
+        color: #74a1b8;
+        text-decoration: none;
+        border-radius: 4px
+    }
+    .tips {
+        vertical-align: bottom;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url(../images/tips.png) no-repeat center center;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: tips;
+        animation-name: tips;
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+    }
+    
+    @-webkit-keyframes tips {
+        0% {
+            -webkit-transform: scale(1,1);
+            transform: translate3d(1,1);
+        }
+        50%{
+            -webkit-transform: scale(2,2);
+            transform: translate3d(2,2);
+        }
+        100% {
+            -webkit-transform: scale(1,1);
+            transform: translate3d(1,1);
+        }
+    }
+        @keyframes tips {
+            0% {
+            -webkit-transform: scale(1,1);
+            transform: translate3d(1,1);
+        }
+        50%{
+            -webkit-transform: scale(2,2);
+            transform: translate3d(2,2);
+        }
+        100% {
+            -webkit-transform: scale(1,1);
+            transform: translate3d(1,1);
+        }
+    }

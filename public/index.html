@@ -1,10 +1,313 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>index</title>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>窝聊-主页</title>
+	<link rel="stylesheet/less" href="./css/index.less"/>
+	<link rel="stylesheet/less" href="./css/page-index.less"/>
+	<link rel="stylesheet" href="./css/animated.css"/>
+	<link rel="stylesheet" href="./css/part.css"/>
+	<link rel="stylesheet" href="css/scrollbar.css">
+	<link rel="stylesheet" href="css/jscrollpane1.css" />
+	<link rel="stylesheet" href="./css/style.css"/>
+	<link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css"/>
+
+	<script src="http://cdn.bootcss.com/less.js/1.7.0/less.min.js"></script>
 </head>
 <body>
-    index.html
+<div class="login">
+    <div class="close">
+        <a href="#">x</a>
+    </div>
+    <h1>窝聊</h1>
+    <h2>登陆窝聊，寻找兴趣</h2>
+    <form action="/auth/" method="post" class="mail-login">
+        <input type="text" name="email" placeholder="邮箱" class="clear-input">
+        <input name="password" type="password" placeholder="密码" class="clear-input">
+        <a href="#" onclick="return false;" class="login-btn">
+            登录
+        </a>
+    </form>
+    <div>
+        <a href="#">忘记密码？</a>
+    </div>
+</div>
+<div class="mask"></div>
+<div class="page-header">
+	<img src="./img/logo.png" class="logo pull-left"/>
+	<ul class="navbar clearfix pull-left">
+		<li><a href="#" class="active" data-type="index">首页</a></li>
+		<li><a href="#" data-type="life">生活</a></li>
+		<li><a href="#" data-type="study">学习</a></li>
+		<li><a href="#" data-type="chat">闲聊</a></li>
+		<li><a href="#" data-type="enmotion">情感</a></li>
+		<li><a href="#" data-type="personal">个人中心</a></li>
+	</ul>
+	<div class="user pull-right">
+		<a class="btn-login"></a>
+		<a class="btn-register"></a>
+	</div>
+</div>
+<div class="container">
+	<div class="spinner">
+		<div class="bounce bounce1"></div>
+		<div class="bounce bounce2"></div>
+		<div class="bounce bounce3"></div>
+		<img src="./img/load.gif" alt="" class="loading"/>
+	</div>
+	<div class="page-index">
+		<div class="index-container clearfix">
+
+		</div>
+		<div class="flow-container clearfix">
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+		</div>
+	</div>
+</div>
+<div class="fixed recommend">
+	<a href="#" class="btn-friend">好友 <span class="after"></span></a>
+	<a href="#" class="btn-nav">导航 <span class="after"></span></a>
+	<a href="#" class="btn-recommand">推荐 <span class="after"></span></a>
+</div>
+<div class="fixed secondary">
+	<ul class="list">
+		<li><a href="#">· 寻找感兴趣的生活话题</a></li>
+		<li><a href="#">· 找寻创意</a></li>
+		<li><a href="#">· 生活与闲聊</a></li>
+		<li><a href="#">· 礼品</a></li>
+		<li><a href="#">· 寻找过去的记忆</a></li>
+		<li><a href="#">· 旅游-邮寄</a></li>
+		<li><a href="#">· 他和她</a></li>
+	</ul>
+</div>
+<div id="friend" class="fixed friend">
+	<div class="f-tittle">
+		<!-- <div class="f-info"></div> -->
+		<h1 class="f-indent f-chat-title">Yeoman`</h1>
+		<div class="f-indent f-chat-name">Hi!I am yeoman!welcome to my page!</div>
+		<!-- <div class="f-my"></div> -->
+	</div>
+	<div class="f-personal">
+		<a href="" class="add">新增好友</a>
+		好友列表
+	</div>
+	<div id="jp-container" class="jp-container">
+		<div class="myfriend">
+			<div class="f-photo">
+				<img src="./img/photo.jpg" alt="f-photo">
+
+			</div>
+			<div class="f-descrip">
+
+				<div class="f-name"><span class='fn'>姓名</span><span class='tips'></span></div>
+				<div class="f-msg">新消息</div>
+				<div class="f-time">11:21</div>
+			</div>
+		</div>
+		<div class="myfriend">
+			<div class="f-photo">
+				<img src="./img/photo.jpg" alt="f-photo">
+
+			</div>
+			<div class="f-descrip">
+
+				<div class="f-name"><span class='fn'>姓名</span><span class='tips'></span></div>
+				<div class="f-msg">新消息</div>
+				<div class="f-time">11:21</div>
+			</div>
+		</div>
+		<div class="myfriend">
+			<div class="f-photo">
+				<img src="./img/photo.jpg" alt="f-photo">
+
+			</div>
+			<div class="f-descrip">
+
+				<div class="f-name"><span class='fn'>姓名</span><span class='tips'></span></div>
+				<div class="f-msg">新消息</div>
+				<div class="f-time">11:21</div>
+			</div>
+		</div>
+		<div class="myfriend">
+			<div class="f-photo">
+				<img src="./img/photo.jpg" alt="f-photo">
+			</div>
+			<div class="f-descrip">
+
+				<div class="f-name"><span class='fn'>姓名</span><span class='tips'></span></div>
+				<div class="f-msg">新消息</div>
+				<div class="f-time">11:21</div>
+			</div>
+		</div>
+		<div class="myfriend">
+			<div class="f-photo">
+				<img src="./img/photo.jpg" alt="f-photo">
+			</div>
+			<div class="f-descrip">
+
+				<div class="f-name"><span class='fn'>姓名</span><span class='tips'></span></div>
+				<div class="f-msg">新消息</div>
+				<div class="f-time">11:21</div>
+			</div>
+		</div>
+		<div class="myfriend">
+			<div class="f-photo">
+				<img src="./img/photo.jpg" alt="f-photo">
+			</div>
+			<div class="f-descrip">
+
+				<div class="f-name"><span class='fn'>姓名</span><span class='tips'></span></div>
+				<div class="f-msg">新消息</div>
+				<div class="f-time">11:21</div>
+			</div>
+		</div>
+		<div class="myfriend">
+			<div class="f-photo">
+				<img src="./img/photo.jpg" alt="f-photo">
+			</div>
+			<div class="f-descrip">
+
+				<div class="f-name"><span class='fn'>姓名</span><span class='tips'></span></div>
+				<div class="f-msg">新消息</div>
+				<div class="f-time">11:21</div>
+			</div>
+		</div>
+		<div class="myfriend">
+			<div class="f-photo">
+				<img src="./img/photo.jpg" alt="f-photo">
+			</div>
+			<div class="f-descrip">
+
+				<div class="f-name"><span class='fn'>姓名</span><span class='tips'></span></div>
+				<div class="f-msg">新消息</div>
+				<div class="f-time">11:21</div>
+			</div>
+		</div>
+		<div class="myfriend">
+			<div class="f-photo">
+				<img src="./img/photo.jpg" alt="f-photo">
+			</div>
+			<div class="f-descrip">
+
+				<div class="f-name"><span class='fn'>姓名</span><span class='tips'></span></div>
+				<div class="f-msg">新消息</div>
+				<div class="f-time">11:21</div>
+			</div>
+		</div>
+		<div class="myfriend">
+			<div class="f-photo">
+				<img src="./img/photo.jpg" alt="f-photo">
+			</div>
+			<div class="f-descrip">
+
+				<div class="f-name"><span class='fn'>姓名</span><span class='tips'></span></div>
+				<div class="f-msg">新消息</div>
+				<div class="f-time">11:21</div>
+			</div>
+		</div>
+		<div class="myfriend">
+			<div class="f-photo">
+				<img src="./img/photo.jpg" alt="f-photo">
+			</div>
+			<div class="f-descrip">
+
+				<div class="f-name"><span class='fn'>姓名</span><span class='tips'></span></div>
+				<div class="f-msg">新消息</div>
+				<div class="f-time">11:21</div>
+			</div>
+		</div>
+		<div class="myfriend">
+			<div class="f-photo">
+				<img src="./img/photo.jpg" alt="f-photo">
+			</div>
+			<div class="f-descrip">
+
+				<div class="f-name"><span class='fn'>姓名</span><span class='tips'></span></div>
+				<div class="f-msg">新消息</div>
+				<div class="f-time">11:21</div>
+			</div>
+		</div>
+		<div class="myfriend">
+			<div class="f-photo">
+				<img src="./img/photo.jpg" alt="f-photo">
+			</div>
+			<div class="f-descrip">
+
+				<div class="f-name"><span class='fn'>姓名</span><span class='tips'></span></div>
+				<div class="f-msg">新消息</div>
+				<div class="f-time">11:21</div>
+			</div>
+		</div>
+	</div>
+</div>
 </body>
+<script id="indexTemplate" type="text/x-jquery-tmpl">
+
+        <div class="pull-left leftbar">
+            {{each leftData}}
+                <div class="row {{if ($index % 2 ==0)}}even{{/if}}">
+                    <div class="item"><img src="${$value.img}" alt="n1" class='lx'/></div>
+                    <div class="item">
+                        <div class="hgroup">
+                            <h1 class="title">${$value.title1}</h1>
+                            <h2 class="title title-secondary">${$value.title2}</h2>
+                        </div>
+                        <p class="note">${$value.note}</p>
+                        <a href="#"><img src="./img/watch.png" alt="" class="lx watch"/></a>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+        <div class="pull-right rightbar">
+            {{each rightData}}
+                <div class="row {{if ($index % 2 ==0)}}even{{/if}}">
+                    <div class="item"><img src="./img/ni1.png" alt="n1" class='lx'/></div>
+                    <div class="item">
+                        <div class="hgroup">
+                            <h1 class="title">${$value.title1}</h1>
+                            <h2 class="title title-secondary">${$value.title2}</h2>
+                        </div>
+                        <p class="note">${$value.note}</p>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+
+</script>
+<script id="navTemplate" type="text/x-jquery-tmpl">
+{{each navSecondary}}
+    <li><a href="${$value.anchor}">${$value.content}</a></li>
+{{/each}}
+</script>
+<script id="flowTemplate" type="text/x-jquery-tmpl">
+	<div class="flow-item">
+		{{if img}}
+        <div class="img">
+            <img src="${img}" alt="" />
+        </div>
+        {{/if}}
+        <div class="snail clearfix">
+            <p class="content">
+                ${content}
+            </p>
+            <div class="function">
+                <a href="#" class="watch"><i class="fa fa-eye"></i>关注 ${attention}</a>
+                <a href="#" class="watch join"><i class="fa fa-male"></i>加入 ${join}</a>
+            </div>
+        </div>
+
+    </div>
+</script>
+<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
+<script src="./js/jquery.tmpl.min.js"></script>
+<script src="./js/index.js"></script>
+<!-- the mousewheel plugin -->
+<script src="js/jquery.mousewheel.js"></script>
+<!-- the jScrollPane script -->
+<script src="js/jquery.jscrollpane.min.js"></script>
+<script src="js/scroll-startstop.events.jquery.js"></script>
+<script src="js/scrollbar.js"></script>
 </html>

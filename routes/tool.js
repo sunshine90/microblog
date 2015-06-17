@@ -6,7 +6,7 @@ module.exports = {
     jsonModel : function (sta, data){
         return JSON.stringify({
             status : sta,
-            responseText : data
+            resText : data
         })
     },
     /* 链接数据库地址 */
@@ -19,6 +19,15 @@ module.exports = {
             }
         }
         return true;
+    },
+    // 时间格式化
+    dateFormat : function(date){
+        return date.getFullYear()+"/"+
+            (date.getMonth()+1) +"/"+
+            date.getDate() +" "+
+            date.getHours()+":"+
+            date.getMinutes()+":"+
+            date.getSeconds();
     }
 
 };

@@ -31,7 +31,17 @@ module.exports = {
 
     },
     logup : function (req, res, next){  // 注册
-        res.send("log-logup");
+        var user = req.body;
+        userModel.create (user, function(err, result){
+            if(err){
+                res.send(tool.jsonModel("fail", "had"));
+            }
+            else {
+                req.session.user = result;
+                // 响应json数据
+                res.send(tool.jsonModel("success", result));
+            }
+        });
     },
     logout : function (req, res, next){
         // 登出
@@ -61,7 +71,7 @@ module.exports = {
         }
         next();
     }
-}
+};
 
 
 

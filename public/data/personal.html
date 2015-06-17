@@ -1,0 +1,210 @@
+<div class="i-wrap">
+    <div class="i-tab">
+        <div class="tab-index1 active tab">我的资料</div>
+        <div class="tab-index2 tab" data-type="snail">我的小窝</div>
+        <div class="tab-index3 tab" data-type="friend">我的好友</div>
+    </div>
+    <div class="i-tab-info">
+        <div class="tab-summary">具体信息</div>
+        <div class="i-tab-data tab-info" style="display:block">
+            <div>
+                <div class="p-photo"></div>
+                <div class="i-detial">
+                    <div class="i-main">
+                        <div class="u-photo">
+                            <div class="u-p-content">
+                                <img src="./img/default.jpg">
+                            </div>
+                        </div>
+                        <form class="u-info" id="u-info">
+                            <div class="tb-group">
+                                <label for="">昵称：</label>
+                                <input class="tb-control" name="nickname" id='u-nickname' value="么么哒"/>
+                            </div>
+                            <div class="tb-group">
+                                <label for="">邮箱：</label>
+                                <input class="tb-control" name="email" id='u-mail' value="237393775@qq.com"/>
+                            </div>
+                            <div class="tb-group">
+                                <label for="">性别：</label>
+                                <select class="tb-control" name="gender" id="u-gender">
+                                    <option value="male">男</option>
+                                    <option value="female">女</option>
+                                </select>
+                            </div>
+                            <div class="tb-group">
+                                <label for="">魅力值：</label>
+                                <input class="tb-control" name="attractive" id='u-attractive' value="100"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="tb-action">
+                <a href="#" class="tb-btn tb-btn-save" id="tb-user-save"><i class="fa fa-save"></i>保存</a>
+            </div>
+        </div>
+        <div class="i-tab-info-nest  tab-info">
+            <div class="i-detial" id="i-snail">
+
+            </div>
+        </div>
+        <div class="i-tab-info-fmanner  tab-info">
+            <div class="i-detial">
+                <div class="i-main">
+                    <div class="tab-pandi">
+                        <div class="tab-f-ph">
+                            <img src="./img/photo.jpg">
+                        </div>
+                        <div class="tab-f-if">
+                            <div class="tab-f-name">姓名</div>
+                            <div class="tab-f-sign">我的个性签名</div>
+                            <div class="tab-f-intime">添加时间:<span>2015-6-17</span></div>
+                        </div>
+                    </div>
+                    <div class="f-delete">
+                        <div class="dlt">删除好友</div>
+                    </div>
+                </div>
+                <div class="i-main">
+                    <div class="tab-pandi">
+                        <div class="tab-f-ph">
+                            <img src="./img/photo.jpg">
+                        </div>
+                        <div class="tab-f-if">
+                            <div class="tab-f-name">姓名</div>
+                            <div class="tab-f-sign">我的个性签名</div>
+                            <div class="tab-f-intime">添加时间:<span>2015-6-17</span></div>
+                        </div>
+                    </div>
+                    <div class="f-delete">
+                        <div class="dlt">删除好友</div>
+                    </div>
+                </div>
+                <div class="i-main">
+                    <div class="tab-pandi">
+                        <div class="tab-f-ph">
+                            <img src="./img/photo.jpg">
+                        </div>
+                        <div class="tab-f-if">
+                            <div class="tab-f-name">姓名</div>
+                            <div class="tab-f-sign">我的个性签名</div>
+                            <div class="tab-f-intime">添加时间:<span>2015-6-17</span></div>
+                        </div>
+                    </div>
+                    <div class="f-delete">
+                        <div class="dlt">删除好友</div>
+                    </div>
+                </div>
+                <div class="i-main">
+                    <div class="tab-pandi">
+                        <div class="tab-f-ph">
+                            <img src="./img/photo.jpg">
+                        </div>
+                        <div class="tab-f-if">
+                            <div class="tab-f-name">姓名</div>
+                            <div class="tab-f-sign">我的个性签名</div>
+                            <div class="tab-f-intime">添加时间:<span>2015-6-17</span></div>
+                        </div>
+                    </div>
+                    <div class="f-delete">
+                        <div class="dlt">删除好友</div>
+                    </div>
+                </div>
+                <div class="i-main">
+                    <div class="tab-pandi">
+                        <div class="tab-f-ph">
+                            <img src="./img/photo.jpg">
+                        </div>
+                        <div class="tab-f-if">
+                            <div class="tab-f-name">姓名</div>
+                            <div class="tab-f-sign">我的个性签名</div>
+                            <div class="tab-f-intime">添加时间:<span>2015-6-17</span></div>
+                        </div>
+                    </div>
+                    <div class="f-delete">
+                        <div class="dlt">删除好友</div>
+                    </div>
+                </div>
+                <div class="i-main">
+                    <div class="tab-pandi">
+                        <div class="tab-f-ph">
+                            <img src="./img/photo.jpg">
+                        </div>
+                        <div class="tab-f-if">
+                            <div class="tab-f-name">姓名</div>
+                            <div class="tab-f-sign">我的个性签名</div>
+                            <div class="tab-f-intime">添加时间:<span>2015-6-17</span></div>
+                        </div>
+                    </div>
+                    <div class="f-delete">
+                        <div class="dlt">删除好友</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function(){
+
+        function loadShow(isMask) {
+            if(isMask)$(".mask").show();
+            $(".spinner").show();
+        }
+        function loadHide() {
+            $(".mask").hide();
+            $(".spinner").hide();
+        }
+        var colorArr = ['#4b8df8','#35aa47','#4b8df8']
+        $('.tab').click(function(){
+            var $index = $(this).index();
+            $(this).addClass('active').siblings('.active').removeClass('active');
+
+            $($('.tab-info')[$index]).show().siblings('.tab-info').hide();
+
+            if($(this).data('type') == 'snail') {
+                loadShow();
+                $.getJSON('./data/mySnail.json', '', function(obj) {
+                    loadHide();
+                    $("#i-snail").html($("#mySnailTemplate").tmpl({data: obj}))
+                })
+            }
+        })
+    })
+</script>
+<script id="mySnailTemplate" type="text/x-jquery-tmpl">
+    {{each data}}
+    <div class="i-main">
+        <div class="tab-n">
+            <div class="n-photo">
+                <img src="${$value.img}">
+            </div>
+            <div class="n-info">
+                <div class="n-name">${$value.title}</div>
+                <div class="n-main-con">${$value.content}</div>
+                <div class="n-type">
+                    <span class="name">小窝类型：</span>
+                    <span>${$value.type}</span>
+                </div>
+                <div class="n-liveness">
+                    <span class="name">小窝活跃度：</span>
+                    <span>${$value.attention}</span>
+                </div>
+                <div class="n-set-time">
+                    <span class="name">加入人数：</span>
+                    <span>${$value.join}</span>
+                </div>
+                <div class="n-set-time">
+                    <span class="name">建立时间：</span>
+                    <span>${$value.time}</span>
+                </div>
+            </div>
+        </div>
+        <div class="n-handle">
+            <div class="n-clickshow">点击查看</div>
+        </div>
+    </div>
+    {{/each}}
+</script>

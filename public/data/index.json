@@ -1,0 +1,64 @@
+{
+  "index": {
+    "leftData":[{
+      "img": "./img/ni1.png",
+      "title1": "title1",
+      "title2": "title2",
+      "note": "note"
+    },{
+      "img": "./img/ni1.png",
+      "title1": "title1",
+      "title2": "title2",
+      "note": "note"
+    },{
+      "img": "./img/ni1.png",
+      "title1": "title1",
+      "title2": "title2",
+      "note": "note"
+    }],
+    "rightData":[{
+      "img": "./img/ni1.png",
+      "title1": "title1",
+      "title2": "title2",
+      "note": "note"
+    },{
+      "img": "./img/ni1.png",
+      "title1": "title1",
+      "title2": "title2",
+      "note": "note"
+    },{
+      "img": "./img/ni1.png",
+      "title1": "title1",
+      "title2": "title2",
+      "note": "note"
+    }]
+  },
+  "nav": [{
+    "content": "题目1",
+    "anchor": "#anchor"
+  },{
+    "content": "题目2",
+    "anchor": "#anchor"
+  },{
+    "content": "题目3",
+    "anchor": "#anchor"
+  }],
+  "flow": [{
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.",
+    "attention": 0,
+    "join": 1
+  },{
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.",
+    "attention": 0,
+    "join": 1
+  },{
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.",
+    "attention": 0,
+    "join": 1
+  },{
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.",
+    "attention": 0,
+    "join": 1,
+    "img": "http://localhost:63342/project/woliao-index/img/ni1.png"
+  }]
+}
